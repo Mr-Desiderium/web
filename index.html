@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Web</title>
-    <link rel='stylesheet' href='main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Presentaciones</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <p>1</p>
-    <div>
-        <P>Prueba</P>
-    </div>
-    
+
+    <!-- Navegación Horizontal -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="index.html" class="navbar-link active">Home</a></li>
+            <li><a href="paginas/presentaciones/presentacion1.html" class="navbar-link">Presentación 1</a></li>
+            <li><a href="paginas/presentaciones/presentacion2.html" class="navbar-link">Presentación 2</a></li>
+            <li><a href="paginas/presentaciones/presentacion3.html" class="navbar-link">Presentación 3</a></li>
+            <li><a href="paginas/presentaciones/presentacion4.html" class="navbar-link">Presentación 4</a></li>
+            <li><a href="paginas/presentaciones/presentacion5.html" class="navbar-link">Presentación 5</a></li>
+            <li><a href="paginas/presentaciones/presentacion6.html" class="navbar-link">Presentación 6</a></li>
+            <li><a href="paginas/presentaciones/presentacion7.html" class="navbar-link">Presentación 7</a></li>
+            <li><a href="paginas/presentaciones/presentacion8.html" class="navbar-link">Presentación 8</a></li>
+            <li><a href="paginas/presentaciones/presentacion9.html" class="navbar-link">Presentación 9</a></li>
+            <li><a href="paginas/presentaciones/presentacion10.html" class="navbar-link">Presentación 10</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <h1 class="page-title">Catálogo Principal</h1>
+
+        <div class="catalog-grid">
+
+            <!-- Tarjeta 1 -->
+            <article class="card">
+                <!-- Imagen -> Redirige a la Presentación -->
+                <a href="paginas/presentaciones/presentacion1.html" class="card-preview-link">
+                    <img src="https://via.placeholder.com/600x337/111111/ffffff?text=Presentacion+1" alt="Presentación 1" class="card-img">
+                </a>
+                <div class="card-info">
+                    <!-- Título -> Redirige a la Página del Título -->
+                    <h3>
+                        <a href="paginas/titulos/titulo1.html" class="card-title-link">Título de Presentación 1</a>
+                    </h3>
+                    <!-- Autor -> Redirige a la Página del Autor -->
+                    <p>
+                        <a href="paginas/autores/autor1.html" class="card-author-link">Por: Nombre del Autor 1</a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 -->
+            <article class="card">
+                <a href="paginas/presentaciones/presentacion2.html" class="card-preview-link">
+                    <img src="https://via.placeholder.com/600x337/111111/ffffff?text=Presentacion+2" alt="Presentación 2" class="card-img">
+                </a>
+                <div class="card-info">
+                    <h3>
+                        <a href="paginas/titulos/titulo2.html" class="card-title-link">Título de Presentación 2</a>
+                    </h3>
+                    <p>
+                        <a href="paginas/autores/autor2.html" class="card-author-link">Por: Nombre del Autor 2</a>
+                    </p>
+                </div>
+            </article>
+
+            <!-- Puedes seguir duplicando este bloque <article class="card"> para llegar a 16 o más -->
+
+        </div>
+    </main>
+
 </body>
 </html>
